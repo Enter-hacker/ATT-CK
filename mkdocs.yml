@@ -30,24 +30,86 @@ theme:
 
 nav:
     - ATT&CK:
+        - Introduction: index.md
         - 入口权限:
-            - Miscellaneous introduction: misc/introduction-zh.md
+            - T1189(水坑攻击): TTPs/T1189.md
+            - T1190(常规服务缺陷利用): TTPs/T1190.md
+            - T1133(远程访问服务利用): TTPs/T1133.md
+            - T1200(硬件外设接入攻击): TTPs/T1200.md
+            - T1091(可插拔设备接入攻击): TTPs/T1091.md
+            - T1193(钓鱼附件攻击): TTPs/T1193.md
+            - T1192(钓鱼链接攻击): TTPs/T1192.md
+            - T1194(第三方服务钓鱼攻击): TTPs/T1194.md
+            - T1195(供应链攻击): TTPs/T1195.md
+            - T1199(信任关系攻击): TTPs/T1199.md
+            - T1078(凭据复用攻击): TTPs/T1078.md
         - 程序加载:
-            - Introduction to Web Applications: web/introduction-zh.md
+            - T1155(AppleScript): TTPs/T1155.md
+            - T1191(CMSTP): TTPs/T1191.md
+            - T1059(命令行接口): TTPs/T1059.md
+            - T1223(chm文件): TTPs/T1223.md
+            - T1196(控制面板): TTPs/T1196.md
+            - T1173(DDE): TTPs/T1173.md
+            - T1106(系统API): TTPs/T1106.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
         - 持续控制:
-            - T1156(shell配置): Persistence/T1156.md 
-            - T1015(远程访问系统特性): Persistence/T1015.md
+            - T1156(shell配置): TTPs/T1156.md 
+            - T1015(远程访问系统特性): TTPs/T1015.md
+            - T1182(AppCert DLLs): TTPs/T1182.md
+            - T1103(AppInit DLLs): TTPs/T1103.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
         - 权限提升: 
-            - ELF file:
-                - ELF file basic structure: executable/elf/elf-structure-zh.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
         - 终端对抗:
-            - Reverse Overview:
-                - Software Reverse Engineering Introduction: reverse/introduction-zh.md
-            
-        - 凭据窃取: index.md
-        - 目标发现: index.md
-        - 横向移动: index.md
-        - 信息收集: index.md
-        - 远程控制: index.md
-        - 数据窃取: index.md
-        - 破坏: index.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 凭据窃取:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 目标发现:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 横向移动:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 信息收集:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 远程控制:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 数据窃取:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+        - 破坏:
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
