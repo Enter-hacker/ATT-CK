@@ -1,0 +1,53 @@
+# Project Information
+site_name: Enter Key Hacker - ATT&CK
+site_description: hacking just need the enter key
+site_author: 00theway
+site_url: https://github.com/Enter-hacker/ATT-CK
+
+
+# Repository
+repo_name: 'Enter-hacker/ATT-CK'
+repo_url: 'https://github.com/Enter-hacker/ATT-CK'
+#edit_uri: 'issues'
+
+
+copyright: 'Copyright &copy; 2019 - 2020 Enter Key Team'
+
+theme:
+    name: 'material'
+    language: 'zh'
+    palette:
+        primary: 'blue grey'
+        accent: 'grey'
+    logo: 'images/enter-key.svg'
+    favicon: 'images/enter-key2.ico'
+    feature:
+        tabs: true
+    font:
+        text: 'Noto Sans'
+        code: 'Source Code Pro'
+
+
+nav:
+    - ATT&CK:
+        - 入口权限:
+            - Miscellaneous introduction: misc/introduction-zh.md
+        - 程序加载:
+            - Introduction to Web Applications: web/introduction-zh.md
+        - 持续控制:
+            - T1156(shell配置): Persistence/T1156.md 
+            - T1015(远程访问系统特性): Persistence/T1015.md
+        - 权限提升: 
+            - ELF file:
+                - ELF file basic structure: executable/elf/elf-structure-zh.md
+        - 终端对抗:
+            - Reverse Overview:
+                - Software Reverse Engineering Introduction: reverse/introduction-zh.md
+            
+        - 凭据窃取: index.md
+        - 目标发现: index.md
+        - 横向移动: index.md
+        - 信息收集: index.md
+        - 远程控制: index.md
+        - 数据窃取: index.md
+        - 破坏: index.md
