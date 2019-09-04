@@ -8,7 +8,7 @@ site_url: https://github.com/Enter-hacker/ATT-CK
 # Repository
 repo_name: 'Enter-hacker/ATT-CK'
 repo_url: 'https://github.com/Enter-hacker/ATT-CK'
-#edit_uri: 'issues'
+edit_uri: 'edit/master/docs'
 
 
 copyright: 'Copyright &copy; 2019 - 2020 Enter Key Team'
@@ -24,8 +24,8 @@ theme:
     feature:
         tabs: true
     font:
-        text: 'Noto Sans'
-        code: 'Source Code Pro'
+        text: 'Ubuntu'
+        code: 'Ubuntu Mono'
 
 
 nav:
@@ -51,6 +51,10 @@ nav:
             - T1196(控制面板): TTPs/T1196.md
             - T1173(DDE): TTPs/T1173.md
             - T1106(系统API): TTPs/T1106.md
+            - T1129(加载DLL): TTPs/T1129.md
+            - T1203(应用程序溢出): TTPs/T1203.md
+            - T0000(图形用户界面): TTPs/T0000.md
+            - T0000(xxxx): TTPs/T0000.md
             - T0000(xxxx): TTPs/T0000.md
             - T0000(xxxx): TTPs/T0000.md
             - T0000(xxxx): TTPs/T0000.md
@@ -113,3 +117,7 @@ nav:
             - T0000(xxxx): TTPs/T0000.md
             - T0000(xxxx): TTPs/T0000.md
             - T0000(xxxx): TTPs/T0000.md
+    - 知识点集合:
+        - Introduction: Knowledge.md
+        - web:
+            - KL0001(SQL语句): Knowledge/K0001.md
