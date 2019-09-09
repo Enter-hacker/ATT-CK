@@ -33,129 +33,342 @@ nav:
         - Introduction: index.md
         - 入口打点:
             - 攻击策略TA0001: Tactics/TA0001.md
+            - T1078(凭据复用攻击): TTPs/T1078.md
+            - T1091(可插拔设备接入攻击): TTPs/T1091.md
+            - T1133(远程访问服务VPN、Citrix等): TTPs/T1133.md
             - T1189(水坑攻击): TTPs/T1189.md
             - T1190(常规服务缺陷利用): TTPs/T1190.md
-            - T1133(远程访问服务利用): TTPs/T1133.md
-            - T1200(硬件外设接入攻击): TTPs/T1200.md
-            - T1091(可插拔设备接入攻击): TTPs/T1091.md
-            - T1193(钓鱼附件攻击): TTPs/T1193.md
             - T1192(钓鱼链接攻击): TTPs/T1192.md
+            - T1193(钓鱼附件攻击): TTPs/T1193.md
             - T1194(第三方服务钓鱼攻击): TTPs/T1194.md
             - T1195(供应链攻击): TTPs/T1195.md
             - T1199(信任关系攻击): TTPs/T1199.md
-            - T1078(凭据复用攻击): TTPs/T1078.md
+            - T1200(硬件外设接入攻击): TTPs/T1200.md
         - 武器加载:
             - 攻击策略TA0002: Tactics/TA0002.md
-            - T1155(AppleScript): TTPs/T1155.md
-            - T1191(CMSTP): TTPs/T1191.md
-            - T1059(命令行接口): TTPs/T1059.md
-            - T1223(chm文件): TTPs/T1223.md
-            - T1196(控制面板): TTPs/T1196.md
-            - T1173(DDE): TTPs/T1173.md
-            - T1106(系统API): TTPs/T1106.md
-            - T1129(加载DLL): TTPs/T1129.md
-            - T1203(应用程序溢出): TTPs/T1203.md
-            - T1061(图形用户界面): TTPs/T1061.md
-            - T1118(InstallUtil): TTPs/T1118.md
-            - T1152(Launchctl): TTPs/T1152.md
-            - T1168(linux系统计划任务): TTPs/T1168.md
-            - T1177(LSASS Driver): TTPs/T1177.md
-            - T1170(Mshta): TTPs/T1170.md
-            - T1086(PowerShell): TTPs/T1086.md
-            - T1121(Regsvcs/Regasm): TTPs/T1121.md
-            - T1117(Regsvr32): TTPs/T1117.md
-            - T1085(Rundll32): TTPs/T1085.md
-            - T1053(windows系统计划任务): TTPs/T1053.md
-            - T1064(脚本语言): TTPs/T1064.md
-            - T1035(系统服务): TTPs/T1035.md
-            - T1218(白名单程序利用): TTPs/T1218.md
-            - T1216(白名单脚本利用): TTPs/T1216.md
-            - T1153(Source): TTPs/T1153.md
-            - T1151(长文件名隐藏后缀社工): TTPs/T1151.md
-            - T1072(第三关管控程序): TTPs/T1072.md
-            - T1154(Trap): TTPs/T1154.md
-            - T1127(白名单开发工具): TTPs/T1127.md
-            - T1204(社工欺骗用户运行程序): TTPs/T1204.md
-            - T1047(WMI): TTPs/T1047.md
             - T1028(WinRM): TTPs/T1028.md
+            - T1035(系统服务): TTPs/T1035.md
+            - T1047(WMI): TTPs/T1047.md
+            - T1053(windows系统计划任务): TTPs/T1053.md
+            - T1059(命令行窗口): TTPs/T1059.md
+            - T1061(图形用户界面): TTPs/T1061.md
+            - T1064(脚本语言): TTPs/T1064.md
+            - T1072(第三关管控程序): TTPs/T1072.md
+            - T1085(Rundll32): TTPs/T1085.md
+            - T1086(PowerShell): TTPs/T1086.md
+            - T1106(系统API): TTPs/T1106.md
+            - T1117(Regsvr32): TTPs/T1117.md
+            - T1118(InstallUtil): TTPs/T1118.md
+            - T1121(Regsvcs/Regasm): TTPs/T1121.md
+            - T1127(白名单开发工具): TTPs/T1127.md
+            - T1129(加载DLL): TTPs/T1129.md
+            - T1151(长文件名隐藏后缀社工): TTPs/T1151.md
+            - T1152(macOS Launchctl): TTPs/T1152.md
+            - T1153(Source): TTPs/T1153.md
+            - T1154(linux、macOS trap命令): TTPs/T1154.md
+            - T1155(AppleScript): TTPs/T1155.md
+            - T1168(macOS、linux系统计划任务): TTPs/T1168.md
+            - T1170(Mshta): TTPs/T1170.md
+            - T1173(DDE): TTPs/T1173.md
+            - T1177(LSASS驱动): TTPs/T1177.md
+            - T1191(CMSTP): TTPs/T1191.md
+            - T1196(控制面板): TTPs/T1196.md
+            - T1203(应用程序溢出): TTPs/T1203.md
+            - T1204(社工欺骗用户运行程序): TTPs/T1204.md
+            - T1216(白名单脚本利用): TTPs/T1216.md
+            - T1218(白名单程序利用): TTPs/T1218.md
             - T1220(XSL脚本处理): TTPs/T1220.md
+            - T1223(chm文件): TTPs/T1223.md
         - 持续控制:
             - 攻击策略TA0003: Tactics/TA0003.md
-            - T1156(shell配置): TTPs/T1156.md 
+            - T1004(Winlogon DLL加载): TTPs/T1004.md
+            - T1013(windows Port Monitors loader): TTPs/T1013.md
             - T1015(远程访问系统特性): TTPs/T1015.md
-            - T1182(AppCert DLLs): TTPs/T1182.md
+            - T1019(系统固件): TTPs/T1019.md
+            - T1023(修改快捷方式): TTPs/T1023.md
+            - T1031(修改现有服务): TTPs/T1031.md
+            - T1034(PE windows加载路径劫持): TTPs/T1034.md
+            - T1037(登录脚本): TTPs/T1037.md
+            - T1038(DLL加载搜索顺序劫持): TTPs/T1038.md
+            - T1042(默认文件处理程序): TTPs/T1042.md
+            - T1044(文件权限配置不当的覆盖): TTPs/T1044.md
+            - T1050(新建自启动服务): TTPs/T1050.md
+            - T1053(windows系统计划任务): TTPs/T1053.md
+            - T1058(windows服务注册表权限配置错误): TTPs/T1058.md
+            - T1060(windows 注册表、启动文件夹 开机启动项): TTPs/T1060.md
+            - T1062(Hypervisor): TTPs/T1062.md
+            - T1067(Bootkit): TTPs/T1067.md
+            - T1078(凭据复用攻击): TTPs/T1078.md
+            - T1084(WMI事件订阅): TTPs/T1084.md
+            - T1098(修改账户配置): TTPs/T1098.md
+            - T1100(Web Shell): TTPs/T1100.md
+            - T1101(SSP DLL加载): TTPs/T1101.md
             - T1103(AppInit DLLs): TTPs/T1103.md
-            - T1118(InstallUtil): TTPs/T1118.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1108(多后门): TTPs/T1108.md
+            - T1109(组件设备固件): TTPs/T1109.md
+            - T1122(COM劫持): TTPs/T1122.md
+            - T1128(netsh DLL加载): TTPs/T1128.md
+            - T1131(windows 认证扩展包): TTPs/T1131.md
+            - T1133(远程访问服务VPN、Citrix等): TTPs/T1133.md
+            - T1136(新建后门账户): TTPs/T1136.md
+            - T1137(Office启动加载项): TTPs/T1137.md
+            - T1138(Shim Patch): TTPs/T1138.md
+            - T1150(macOS plist): TTPs/T1150.md
+            - T1152(macOS Launchctl): TTPs/T1152.md
+            - T1154(linux、macOS trap命令): TTPs/T1154.md
+            - T1156(shell配置): TTPs/T1156.md
+            - T1157(Dylib劫持): TTPs/T1157.md
+            - T1158(隐藏文件): TTPs/T1158.md
+            - T1159(macOS LaunchAgents): TTPs/T1159.md
+            - T1160(macOS LaunchDaemons): TTPs/T1160.md
+            - T1161(macOS LC_LOAD_DYLIB): TTPs/T1161.md
+            - T1162(macOS 登录加载项): TTPs/T1162.md
+            - T1163(macOS rc.common脚本): TTPs/T1163.md
+            - T1164(macOS 开机重新打开应用): TTPs/T1164.md
+            - T1165(macOS StartupItems): TTPs/T1165.md
+            - T1166(suid): TTPs/T1166.md
+            - T1168(macOS、linux系统计划任务): TTPs/T1168.md
+            - T1176(浏览器扩展、插件): TTPs/T1176.md
+            - T1177(LSASS驱动): TTPs/T1177.md
+            - T1179(Hooking): TTPs/T1179.md
+            - T1180(屏保程序): TTPs/T1180.md
+            - T1182(AppCert DLLs): TTPs/T1182.md
+            - T1183(IFEO映像劫持): TTPs/T1183.md
+            - T1197(BITS Jobs): TTPs/T1197.md
+            - T1198(SIP and Trust Provider劫持): TTPs/T1198.md
+            - T1205(基于端口流量的触发式后门): TTPs/T1205.md
+            - T1209(TimeProviders): TTPs/T1209.md
+            - T1215(内核模块、扩展): TTPs/T1215.md
+            - T1501(系统服务): TTPs/T1501.md
         - 权限提升: 
             - 攻击策略TA0004: Tactics/TA0004.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-        - 纵向权限拓展:
+            - T1013(windows Port Monitors loader): TTPs/T1013.md
+            - T1015(远程访问系统特性): TTPs/T1015.md
+            - T1034(PE windows加载路径劫持): TTPs/T1034.md
+            - T1038(DLL加载搜索顺序劫持): TTPs/T1038.md
+            - T1044(文件权限配置不当的覆盖): TTPs/T1044.md
+            - T1050(新建自启动服务): TTPs/T1050.md
+            - T1053(windows系统计划任务): TTPs/T1053.md
+            - T1055(进程注入): TTPs/T1055.md
+            - T1058(windows服务注册表权限配置错误): TTPs/T1058.md
+            - T1068(溢出提权): TTPs/T1068.md
+            - T1078(凭据复用攻击): TTPs/T1078.md
+            - T1088(Bypass UAC): TTPs/T1088.md
+            - T1100(Web Shell): TTPs/T1100.md
+            - T1103(AppInit DLLs): TTPs/T1103.md
+            - T1134(访问凭据伪造): TTPs/T1134.md
+            - T1138(Shim Patch): TTPs/T1138.md
+            - T1150(macOS plist): TTPs/T1150.md
+            - T1157(Dylib劫持): TTPs/T1157.md
+            - T1160(macOS LaunchDaemons): TTPs/T1160.md
+            - T1165(macOS StartupItems): TTPs/T1165.md
+            - T1166(suid): TTPs/T1166.md
+            - T1169(Sudo): TTPs/T1169.md
+            - T1178(SID-History Injection): TTPs/T1178.md
+            - T1179(Hooking): TTPs/T1179.md
+            - T1181(EXTRA WINDOW MEMORY): TTPs/T1181.md
+            - T1182(AppCert DLLs): TTPs/T1182.md
+            - T1183(IFEO映像劫持): TTPs/T1183.md
+            - T1206(Sudo缓存): TTPs/T1206.md
+        - 终端对抗:
             - 攻击策略TA0005: Tactics/TA0005.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1006(文件系统逻辑扇区): TTPs/T1006.md
+            - T1009(增大文件体积): TTPs/T1009.md
+            - T1014(Rootkit): TTPs/T1014.md
+            - T1027(文件信息混淆): TTPs/T1027.md
+            - T1036(文件名、路径伪装): TTPs/T1036.md
+            - T1038(DLL加载搜索顺序劫持): TTPs/T1038.md
+            - T1045(软件压缩、加密): TTPs/T1045.md
+            - T1054(阻断信息传输): TTPs/T1054.md
+            - T1055(进程注入): TTPs/T1055.md
+            - T1064(脚本语言): TTPs/T1064.md
+            - T1066(删除工具内被识别的特征): TTPs/T1066.md
+            - T1070(删除日志内相关主机信息): TTPs/T1070.md
+            - T1073(DLL Side-Loading): TTPs/T1073.md
+            - T1078(凭据复用攻击): TTPs/T1078.md
+            - T1085(Rundll32): TTPs/T1085.md
+            - T1088(Bypass UAC): TTPs/T1088.md
+            - T1089(关闭安全防护软件): TTPs/T1089.md
+            - T1093(Process hollowing): TTPs/T1093.md
+            - T1096(NTFS系统特性隐藏文件): TTPs/T1096.md
+            - T1099(修改时间属性): TTPs/T1099.md
+            - T1102(web服务C2通讯): TTPs/T1102.md
+            - T1107(足迹文件清理): TTPs/T1107.md
+            - T1108(多后门): TTPs/T1108.md
+            - T1109(组件设备固件): TTPs/T1109.md
+            - T1112(修改注册表): TTPs/T1112.md
+            - T1116(签名): TTPs/T1116.md
+            - T1117(Regsvr32): TTPs/T1117.md
+            - T1118(InstallUtil): TTPs/T1118.md
+            - T1121(Regsvcs/Regasm): TTPs/T1121.md
+            - T1122(COM劫持): TTPs/T1122.md
+            - T1126(删除网络文件共享): TTPs/T1126.md
+            - T1127(白名单开发工具): TTPs/T1127.md
+            - T1130(安装根证书): TTPs/T1130.md
+            - T1134(访问凭据伪造): TTPs/T1134.md
+            - T1140(信息解码、反混淆): TTPs/T1140.md
+            - T1143(macOS 隐藏窗口): TTPs/T1143.md
+            - T1144(macOS Gatekeeper Bypass): TTPs/T1144.md
+            - T1146(删除命令行历史记录): TTPs/T1146.md
+            - T1147(macOS Hide500Users): TTPs/T1147.md
+            - T1148(HISTCONTROL): TTPs/T1148.md
+            - T1149(macOS LC_MAIN劫持): TTPs/T1149.md
+            - T1150(macOS plist): TTPs/T1150.md
+            - T1151(长文件名隐藏后缀社工): TTPs/T1151.md
+            - T1152(macOS Launchctl): TTPs/T1152.md
+            - T1158(隐藏文件): TTPs/T1158.md
+            - T1170(Mshta): TTPs/T1170.md
+            - T1181(EXTRA WINDOW MEMORY): TTPs/T1181.md
+            - T1183(IFEO映像劫持): TTPs/T1183.md
+            - T1186(Process Doppelgänging): TTPs/T1186.md
+            - T1191(CMSTP): TTPs/T1191.md
+            - T1196(控制面板): TTPs/T1196.md
+            - T1197(BITS Jobs): TTPs/T1197.md
+            - T1198(SIP and Trust Provider劫持): TTPs/T1198.md
+            - T1202(间接程序加载): TTPs/T1202.md
+            - T1205(基于端口流量的触发式后门): TTPs/T1205.md
+            - T1207(DCShadow): TTPs/T1207.md
+            - T1211(防护软件溢出): TTPs/T1211.md
+            - T1216(白名单脚本利用): TTPs/T1216.md
+            - T1218(白名单程序利用): TTPs/T1218.md
+            - T1220(XSL脚本处理): TTPs/T1220.md
+            - T1221(模板注入): TTPs/T1221.md
+            - T1222(修改文件权限): TTPs/T1222.md
+            - T1223(chm文件): TTPs/T1223.md
+            - T1480(触发式执行): TTPs/T1480.md
+            - T1484(修改GPO策略): TTPs/T1484.md
+            - T1497(虚拟化逃逸): TTPs/T1497.md
+            - T1500(投递后实时编译): TTPs/T1500.md
         - 凭据窃取:
             - 攻击策略TA0006: Tactics/TA0006.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-        - 网络空间测绘:
+            - T1003(凭据提取): TTPs/T1003.md
+            - T1040(嗅探): TTPs/T1040.md
+            - T1056(捕获输入信息): TTPs/T1056.md
+            - T1081(文件中的用户凭据): TTPs/T1081.md
+            - T1098(修改账户配置): TTPs/T1098.md
+            - T1110(暴力破解): TTPs/T1110.md
+            - T1111(两步认证信息窃取): TTPs/T1111.md
+            - T1139(Bash History): TTPs/T1139.md
+            - T1141(伪造输入提示框): TTPs/T1141.md
+            - T1142(macOS Keychain): TTPs/T1142.md
+            - T1145(私钥): TTPs/T1145.md
+            - T1167(macOS securityd内存获取用户凭据): TTPs/T1167.md
+            - T1171(LLMNR/NBT-NS 毒化/中继): TTPs/T1171.md
+            - T1174(Password Filter DLL): TTPs/T1174.md
+            - T1179(Hooking): TTPs/T1179.md
+            - T1187(Windows SMB认证特性): TTPs/T1187.md
+            - T1208(Kerberoasting): TTPs/T1208.md
+            - T1212(凭据认证漏洞): TTPs/T1212.md
+            - T1214(注册表中的凭据信息): TTPs/T1214.md
+        - 信息收集:
             - 攻击策略TA0007: Tactics/TA0007.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1007(收集系统服务信息): TTPs/T1007.md
+            - T1010(收集桌面应用程序信息): TTPs/T1010.md
+            - T1012(查询注册表): TTPs/T1012.md
+            - T1016(收集系统网络配置信息): TTPs/T1016.md
+            - T1018(收集其他系统信息): TTPs/T1018.md
+            - T1033(收集系统所有者信息): TTPs/T1033.md
+            - T1040(嗅探): TTPs/T1040.md
+            - T1046(网络服务扫描): TTPs/T1046.md
+            - T1049(收集网络连接信息): TTPs/T1049.md
+            - T1057(收集进程信息): TTPs/T1057.md
+            - T1063(收集防护软件信息): TTPs/T1063.md
+            - T1069(收集组权限信息): TTPs/T1069.md
+            - T1082(收集系统信息): TTPs/T1082.md
+            - T1083(收集文件和目录信息): TTPs/T1083.md
+            - T1087(收集账号信息): TTPs/T1087.md
+            - T1120(收集外设信息): TTPs/T1120.md
+            - T1124(收集时间信息): TTPs/T1124.md
+            - T1135(收集网络共享信息): TTPs/T1135.md
+            - T1201(收集密码策略信息): TTPs/T1201.md
+            - T1217(收集浏览器收藏夹信息): TTPs/T1217.md
+            - T1482(收集域信任信息): TTPs/T1482.md
+            - T1497(虚拟化逃逸): TTPs/T1497.md
         - 横向移动:
             - 攻击策略TA0008: Tactics/TA0008.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-        - 数据分析-信息收集:
+            - T1017(部署应用软件): TTPs/T1017.md
+            - T1021(远程服务): TTPs/T1021.md
+            - T1028(WinRM): TTPs/T1028.md
+            - T1037(登录脚本): TTPs/T1037.md
+            - T1051(开放的web服务): TTPs/T1051.md
+            - T1072(第三关管控程序): TTPs/T1072.md
+            - T1075(PTH): TTPs/T1075.md
+            - T1076(RDP): TTPs/T1076.md
+            - T1077(windows共享): TTPs/T1077.md
+            - T1080(感染共享内容): TTPs/T1080.md
+            - T1091(可插拔设备接入攻击): TTPs/T1091.md
+            - T1097(PTT): TTPs/T1097.md
+            - T1105(远程文件拷贝): TTPs/T1105.md
+            - T1155(AppleScript): TTPs/T1155.md
+            - T1175(DCOM): TTPs/T1175.md
+            - T1184(SSH命令劫持): TTPs/T1184.md
+            - T1210(远程服务溢出): TTPs/T1210.md
+        - 数据收集:
             - 攻击策略TA0009: Tactics/TA0009.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1005(本地系统数据): TTPs/T1005.md
+            - T1025(可移动设备内敏感数据): TTPs/T1025.md
+            - T1039(网络共享服务内敏感数据): TTPs/T1039.md
+            - T1056(捕获输入信息): TTPs/T1056.md
+            - T1074(数据转存): TTPs/T1074.md
+            - T1113(截屏): TTPs/T1113.md
+            - T1114(邮件信息收集): TTPs/T1114.md
+            - T1115(剪切板信息收集): TTPs/T1115.md
+            - T1119(自动化信息收集): TTPs/T1119.md
+            - T1123(音频监听): TTPs/T1123.md
+            - T1125(视频监听): TTPs/T1125.md
+            - T1185(浏览器内信息窃取): TTPs/T1185.md
+            - T1213(从数据中心收集数据): TTPs/T1213.md
         - 远程控制:
             - 攻击策略TA0011: Tactics/TA0011.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1001(数据混淆): TTPs/T1001.md
+            - T1008(备用C2): TTPs/T1008.md
+            - T1024(自定义加密协议): TTPs/T1024.md
+            - T1026(多频段、协议通讯): TTPs/T1026.md
+            - T1032(标准加密协议): TTPs/T1032.md
+            - T1043(使用常见端口通信): TTPs/T1043.md
+            - T1065(非常用端口): TTPs/T1065.md
+            - T1071(标准应用协议): TTPs/T1071.md
+            - T1079(通讯多重加密): TTPs/T1079.md
+            - T1090(中转代理通信): TTPs/T1090.md
+            - T1092(可插拔设备通信): TTPs/T1092.md
+            - T1094(自定义C2通信协议): TTPs/T1094.md
+            - T1095(标准的非应用层协议): TTPs/T1095.md
+            - T1102(web服务C2通讯): TTPs/T1102.md
+            - T1104(分阶段通讯): TTPs/T1104.md
+            - T1105(远程文件拷贝): TTPs/T1105.md
+            - T1132(数据编码): TTPs/T1132.md
+            - T1172(C2使用Domain Fronting): TTPs/T1172.md
+            - T1188(多级代理): TTPs/T1188.md
+            - T1205(基于端口流量的触发式后门): TTPs/T1205.md
+            - T1219(远程管理工具): TTPs/T1219.md
+            - T1483(DGA): TTPs/T1483.md
         - 数据窃取:
             - 攻击策略TA0010: Tactics/TA0010.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-        - 打扫战场:
+            - T1002(数据压缩): TTPs/T1002.md
+            - T1011(多介质传播): TTPs/T1011.md
+            - T1020(自动化数据窃取): TTPs/T1020.md
+            - T1022(数据加密): TTPs/T1022.md
+            - T1029(定时数据窃取): TTPs/T1029.md
+            - T1030(分块数据窃取): TTPs/T1030.md
+            - T1041(通过C2窃取数据): TTPs/T1041.md
+            - T1048(通过不同于C2的协议、通道进行数据窃取): TTPs/T1048.md
+            - T1052(通过硬件设备窃取数据): TTPs/T1052.md
+        - 战略性破坏:
             - 攻击策略TA0040: Tactics/TA0040.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
-            - T0000(xxxx): TTPs/T0000.md
+            - T1485(数据破坏): TTPs/T1485.md
+            - T1486(恶意加密文件): TTPs/T1486.md
+            - T1487(擦除硬盘结构信息): TTPs/T1487.md
+            - T1488(擦除硬盘内容): TTPs/T1488.md
+            - T1489(关闭服务): TTPs/T1489.md
+            - T1490(破坏还原系统): TTPs/T1490.md
+            - T1491(恶搞目标展示面): TTPs/T1491.md
+            - T1492(操控存储数据): TTPs/T1492.md
+            - T1493(操控传输数据): TTPs/T1493.md
+            - T1494(操控实时数据): TTPs/T1494.md
+            - T1495(固件破坏): TTPs/T1495.md
+            - T1496(资源劫持): TTPs/T1496.md
+            - T1498(网络拒绝服务): TTPs/T1498.md
+            - T1499(终端拒绝服务): TTPs/T1499.md
     - 缓解措施:
         - M1042(): Mitigations/M1042.md
     - 检测方法:
